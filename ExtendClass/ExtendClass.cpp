@@ -2,10 +2,22 @@
 //
 
 #include <iostream>
-
+#include <string>
+#include "TableTennisPlayer.h"
+#include "TestVirtual.h"
+#include "Person.h"
 int main()
 {
     std::cout << "Hello World!\n";
+	{
+		//TableTennisPlayer table;
+		//table.testUseFution();
+		TestVirtual* test = new Person;
+		delete test;
+	}
+	
+	getchar();
+	return 0;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

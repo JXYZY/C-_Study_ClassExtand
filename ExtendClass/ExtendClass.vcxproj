@@ -72,6 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\build_x64</OutDir>
+    <IntDir>$(SolutionDir)..\build_x64\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -152,6 +154,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ExtendClass.cpp" />
+    <ClCompile Include="Person.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="TableTennisPlayer.cpp" />
+    <ClCompile Include="TestVirtual.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="TableTennisPlayer.h" />
+    <ClInclude Include="TestVirtual.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
